@@ -1,0 +1,895 @@
+<html>
+
+<head>
+<title>Administrator tools:</title>
+</head>
+
+<body bgcolor=white>
+
+<h2>Research Tools</h2>
+
+<p>We need to have all data collected and stored in a
+database. We need to talk about the design of the database. A
+supporting document called Database fields lists all the current fields in
+the current TI database, plus additional ones that we need. The database needs to be designed in a way
+that makes more sense to the researchers than the current TI's database. We will need discuss the design. I don't know the best way to design
+databases, but I can tell you what has not worked for me and why.  If possible the database should be on a
+different server than the one the community is on. The database should collect all commands issued from both
+the web interface and the chat interface.
+The database should also have demographic information about the members. </p>
+
+<p>We will need Admin Reporting tools and Researcher Reporting
+tools. The distinction will be
+that Admin Reporting tools will provide summary data and Researcher Reporting
+tools will provide raw data.  </p>
+
+
+<p>We also need a way to look at guests. We won't be able to assume anything
+across guest log ins, but we will need a way to count guest log ins, and to
+follow what a guest does with in a log in session so that we can learn
+something about guests. </p>
+
+<h3>Admin Reporting Tools</h3>
+
+<p>All of the repoting tools should have the ability to be run
+by any time frame. Another
+dimension that is independent from time frame is that reporting tools should be
+able to be run by any location group, room, course, or all of TAPPED IN. For time frame we should be able to
+break things down by session, hour, day, week, month or other specified
+duration. Session is defined in the Calendar spec. A session has the following fields
+associated with it and we should be able to do searches with these fields too:</p>
+
+<ul>
+<li>Date of session</li>
+<li>Start time and approximateend</li>
+<li>Room</li>
+<li>Session name</li>
+<li>Description</li>
+<li>Leader name</li>
+<li>keyword categorization (so
+people can search and we can sort by keyword)</li>
+<li>Group affiliation </li>
+</ul>
+
+<p>We will need summary data of people who attended during a
+period of time (session, hour, day, week, month, any specified duration). For example, SSF sessions that were
+listed on the SSF calendar for June.
+The report should have two options, list everyone who attended the
+session and not just the members of the SSF group (assuming they are a public
+group and anyone can attend their sessions), or just list group members who
+attended the session. We also need
+to look at just TI members or include guest data too.  <i>By default, summary tools should only provide info about
+a group's members to group admin, but it could be an option for them.</i> </p>
+
+<center>
+Attendees for SSF sessions June 2002<br>
+Judi 3<br>
+Melissa 5<br>
+Mark 1<br>
+  Jenny 0<br>
+  <br>
+</center>
+
+<p>Notes for me (Judi): Room Activity description (Room list menu and pop up list 
+  of session title based on room you select b/c of integration with the calendar 
+  and the ability to look by time period e.g., all day January 3, 2002.)</p>
+
+<p>Summary data of what sessions (by name of session in
+calendar) people attended. The report should have two options, list everyone
+who attended the session and not just the members of the SSF group (assuming
+they are a public group and anyone can attend their sessions), or just list
+group members who attended the session.</p>
+
+<p>Judi: Smithsonian Website, Civil War, WW II</p>
+
+<p>Melissa: Integrating data into your SS class, Smithsonian
+Website, Middle School SS, Civl War, WW II</p>
+
+<p>Mark: Website resources for High School SS teachers</p>
+
+<p>Etc.</p>
+
+<p>Ability to see the time connected for all members over a
+period of time for a group or room (day/week/month/any specified duration). The
+report should have two options, list everyone who attended the session and not
+just the members of the SSF group (assuming they are a public group and anyone
+can attend their sessions), or just list group members who attended the
+session. In this case' </p>
+
+<center>
+Activity in the SSF room for June 2002<br>
+Judi: 4 hours 8 minutes<br>
+Melissa: 8 hours 6 minutes<br>
+Mark: 3 hours 12 minutes<br>
+  Jenny: 2 hours 3 minutes<br>
+  <br>
+</center>
+
+<p>(note: Jenny logged in, but did not attend sessions)</p>
+
+<h3>Other Summary Reports:</h3>
+
+<p>1. Member
+Activity looking by group see # of logins, length of time online, # of rooms
+visited, # of commands issued (web and chat (talk, who, emote, pm)), # of
+people members talked with </p>
+
+<p>2. Object
+Activity number of bulletin board posts, # of different bb's posted to, # of
+objects uploaded, # of links added, # of files downloaded, # of links clicked
+on (e.g., Welcome, Files, Calendars, etc.), # of notes made, # of passageways
+created, # of favorite places created. (Guests will not have any capabilities
+of creating objects just viewing them. 
+We need to track this.)</p>
+
+<p>Discussion Boards:
+We will care about how many discussion board (DB) posts were made by a
+member, (broken down by discussion board).  Group leaders should be able to see a summary of a group's
+activity on a DB.  (Guests can view
+DB's but not post right?)</p>
+
+<p>Questions we expect group leaders will want to know the
+answers to are:</p>
+
+<ul>
+<li> How many posts were made on each DB in all their rooms
+and in each room</li>
+<li>How many posts were made by each member on the DB in
+all their rooms and in each individual room</li>
+</ul>
+
+<p>We will also need summary tools for how many emails were
+sent through our system if we have this capability.</p>
+
+<p>3. Search
+Activity kind of search, number of searches</p>
+
+<p>4. Cumulative
+Login Time by Day of Week by rooms or by the whole system</p>
+
+<p>5. Activity
+by Day of Week for rooms or for the whole system.  It gives us a printout of the number of members connected by
+day of week.  Summary data should
+include number of hours connected by day of week totaled over all members.</p>
+
+<p>6. Activity
+by Time of Day gives us a printout of the number of members logged in by hour
+of day.  (it would be nice if we
+could also do this by room.) .  It
+helps us know what is happening and when we can schedule maintenance.</p>
+
+
+<h3>Research Reporting Tools:</h3>
+
+<p>We need to be able to get the types of commands issued by a
+person during a specified time frame in a specified room.  </p>
+
+<p>For example data from the Smithsonian Web Site session:</p>
+
+<table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+  <td width=63 valign=top>
+  <p>PERSON</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Roomname</p>
+  </td>
+  <td width=58 valign=top>
+  <p>Room #</p>
+  </td>
+  <td width=58 valign=top>
+  <p>command</p>
+  </td>
+  <td width=63 valign=top>
+  <p>time issued</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>Enter </p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:50:02</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458<b>'</b></p>
+  </td>
+  <td width=58 valign=top> 
+  <p>Talk</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:50:40</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>PM</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:51:30</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>Whois</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:51:48</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>Talk</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:52:02</p>
+  </td>
+ </tr>
+</table>
+
+<p>Ultimately, we would want to incorporate both data from the
+chat window and data from the web interface too.  For example:</p>
+
+<table border=1 cellspacing=0 cellpadding=0 >
+ <tr>
+  <td width=63 valign=top>
+  <p>PERSON</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Roomname</p>
+  </td>
+  <td width=58 valign=top>
+  <p>Room #</p>
+  </td>
+  <td width=135 valign=top>
+  <p>command</p>
+  </td>
+  <td width=72 valign=top>
+  <p>time issued</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=135 valign=top>
+  <p>Enter </p>
+  </td>
+  <td width=72 valign=top>
+  <p>4:50:02</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=135 valign=top>
+  <p>Click BB link to read</p>
+  </td>
+  <td width=72 valign=top >
+  <p>4:50:08</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=135 valign=top>
+  <p>Click Note link</p>
+  </td>
+  <td width=72 valign=top>
+  <p>4:51:29</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458<b>'</b></p>
+  </td>
+  <td width=135 valign=top>
+  <p>Talk</p>
+  </td>
+  <td width=72 valign=top>
+  <p>4:50:40</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=135 valign=top>
+  <p>PM</p>
+  </td>
+  <td width=72 valign=top>
+  <p>4:51:30</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=135 valign=top>
+  <p>Click BB link to post</p>
+  </td>
+  <td width=72 valign=top>
+  <p>4:51:39</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top >
+  <p>458</p>
+  </td>
+  <td width=135 valign=top>
+  <p>Whois</p>
+  </td>
+  <td width=72 valign=top>
+  <p>4:51:48</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=135 valign=top>
+  <p>Talk</p>
+  </td>
+  <td width=72 valign=top>
+  <p>4:52:02</p>
+  </td>
+ </tr>
+</table>
+
+<p>The important thing is that we need to see a listing of all
+commands issued by members by any time frame.</p>
+
+<p>Social Network Analysis (SNA) data needs to know who all was
+in a room at a given time when someone was speaking. ' In TI the data shows who all was targeted by a
+command.  For example, for a PM,
+there is only one target.  For an
+utterance said aloud in a room, everyone in the room is a target (each “talk”
+command issued is in the database X number of times with X being the number of
+people in the room when the command was issued).  Note how for ENTER there is no target, but for the other
+commands there is a target.  Note
+also how Jim is the target of Melissa's PM.  Jim is not in the room, but Melissa is so we see her
+targets.</p>
+
+<table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+  <td width=63 valign=top>
+  <p>PERSON</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Roomname</p>
+  </td>
+  <td width=58 valign=top>
+  <p>Room #</p>
+  </td>
+  <td width=58 valign=top>
+  <p>command</p>
+  </td>
+  <td width=63 valign=top>
+  <p>time issued</p>
+  </td>
+  <td width=63 valign=top>
+  <p>target</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Mark</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>Enter</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:48:33</p>
+  </td>
+  <td width=63 valign=top>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top>
+  <p>458</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>Enter</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:59:22</p>
+  </td>
+  <td width=63 valign=top>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>Enter </p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:50:02</p>
+  </td>
+  <td width=63 valign=top>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458<b>'</b></p>
+  </td>
+  <td width=58 valign=top> 
+  <p>Talk</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:50:40</p>
+  </td>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458<b>'</b></p>
+  </td>
+  <td width=58 valign=top> 
+  <p>Talk</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:50:40</p>
+  </td>
+  <td width=63 valign=top>
+  <p>Mark</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458<b>'</b></p>
+  </td>
+  <td width=58 valign=top> 
+  <p>Talk</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:50:40</p>
+  </td>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>PM</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:51:30</p>
+  </td>
+  <td width=63 valign=top>
+  <p>Jim</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=58 valign=top>
+  <p>Whois</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:51:48</p>
+  </td>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>talk</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:52:02</p>
+  </td>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>talk</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:52:02</p>
+  </td>
+  <td width=63 valign=top>
+  <p>Mark</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=63 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=68 valign=top>
+  <p>Ssf</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>458</p>
+  </td>
+  <td width=58 valign=top> 
+  <p>talk</p>
+  </td>
+  <td width=63 valign=top>
+  <p>4:52:02</p>
+  </td>
+  <td width=63 valign=top>
+  <p>Melissa</p>
+  </td>
+ </tr>
+</table>
+
+<p>The above table shows how when 3 people are in a room the
+data looks like in TAPPED IN.  In
+the current system, the database divides commands into different command types
+and each command type is it's own table, e.g., communication, object actions,
+perceptions, room action (enters and exits).  This type of format makes it difficult to put it all back
+together, so if there is a way to do this better that would be great.  Ultimately what we need for SNA is </p>
+
+<table border=1 cellspacing=0 cellpadding=0>
+ <tr>
+  <td width=111 valign=top> 
+  </td>
+  <td width=111 valign=top>
+  <p>Mark</p>
+  </td>
+  <td width=111 valign=top>
+  <p>Melissa</p>
+  </td>
+  <td width=111 valign=top>
+  <p>Judi</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=111 valign=top>
+  <p>Mark</p>
+  </td>
+  <td width=111 valign=top>
+  <p>-</p>
+  </td>
+  <td width=111 valign=top>
+  <p>7</p>
+  </td>
+  <td width=111 valign=top>
+  <p>10</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=111 valign=top> 
+  <p>Melissa</p>
+  </td>
+  <td width=111 valign=top>
+  <p>8</p>
+  </td>
+  <td width=111 valign=top>
+  <p>-</p>
+  </td>
+  <td width=111 valign=top>
+  <p>10</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=111 valign=top>
+  <p>Judi</p>
+  </td>
+  <td width=111 valign=top>
+  <p>12</p>
+  </td>
+  <td width=111 valign=top>
+  <p>12</p>
+  </td>
+  <td width=111 valign=top>
+  <p>-</p>
+  </td>
+ </tr>
+</table>
+
+<p>(The numbers in this table represent a count of the number
+of talk communications between the members during a specified amount of time.)</p>
+
+<p>We do have a mode in the current system where we can record
+all actions and times and content issued in a room.  The results of that mode are put into a flat file so that
+the researcher doesn't have to do multiple queries to reconstruct the
+actions.  We have only used this
+research mode a few times, but when we have it has been invaluable!' The other advantage of this flatfile
+result is that we get content and this database will not need to record
+content, just commands issued.  </p>
+
+<p>7. As
+mentioned above we need to be able to get data on guests for tracking them with
+in a log in session.  We also
+should record IP addresses of Guests. 
+</p>
+
+<p>8. SQL
+query (TI staff only)' We need to
+be able to create SQL queries on the fly. 
+We should also have the option to save them in the system and have them
+in a pop-up menu list or something… (a description of the query would be
+helpful too!)</p>
+
+<p>(Do queries like this based on group membership too.)' Administrators can make their own
+“group” designation for people to save for future queries.  Add a way to remember the report
+configuration so you don't have to check off all the options every time.  </p>
+
+<p><b>More Queries that I do on a regular basis now</b></p>
+
+<p>Note: I am
+limited in the kinds of queries I can do currently as I can only join 2 tables
+at one time for a query.  There are
+some queries that I would like to do that involve joining more than 2 tables
+but currently can't because it slows the server down too much.</p>
+
+<p>I need to develop this section.</p>
+
+<hr noshade>
+
+<h3><b>NOTES</b></h3>
+
+<p>Count how many sessions a person has led.  (What kind of sessions, what
+organization).  This may be part of
+their profile or part of a reputation manager in the future.  Be able to easily count how many people
+/ who they are this person has spoken to in their sessions (for SNA stuff).</p>
+
+<p>Give a choice between tab-delimited raw number output and
+graphical .gif or whatever format Prometheus/cold fusion uses.  </p>
+
+<p>We don't have a way to easily find out activity in all rooms
+associated with Pepperdine.  (I'd
+have to go look up all the room numbers and then use them in the query…. We
+need to build in a system that shows relationships among rooms.  –Do we assume that people who are with
+an org (such as Pepperdine) are doing things unrelated to Pepperdine when they
+are in the ASO room?</p>
+
+<p><b>Transcripts</b>: </p>
+<p><b>Discussion Boards:</b> </p>
+<p>We haven't had discussion boards in the past, but I imagine
+organizations would want a way to know who has made how many postings in a
+specified timeframe.</p>
+
+<p>Other stuff</p>
+
+<p>It would be nice to know how many members we had on any
+given day in the past…' Monthly
+stats run and compiled (not just there for the researcher to run, but scripts
+that actually summarize)</p>
+
+<p>Easy to print out who is a member of what group.</p>
+
+<p>Easy to see what functions they have attended. And what
+rooms they were in .and who they talked with during an allotted time.</p>
+
+<p>The
+time connected includes a breakdown of time connected to the synchronous
+environment and the asynchronous environment' I think this is no longer relevant as in TI 2.0 we won't
+have a way for members to connect and be asynchronous only.  </p>
+
+<p><b>Researcher tools:</b></p>
+
+<p>Many of the Admin tools will also function as researcher
+tools, but in addition, researchers will need some special capabilities</p>
+
+<p>In general, content is not collected for research
+purposes--transcripts of public utterances are captured for public ASO sessions
+and a group decides whether to archive their own discussions--but under some
+circumstances it is necessary to collect all utterances (public and private)
+with the user's permission for research. 
+Also collect ALL commands issued during a certain session (synchronous
+and asynchronous commands and the order in which they occurred and time
+stamped.)' This would be a complete
+log of everything that occurred in the room during the discussion.  For example if a user spoke and then
+clicked on the discussion board all this would be recorded as well as the
+content of what was spoken and what was read or written to the discussion
+board.</p>
+
+<p>(A few more words about the current TAPPED IN's
+database…since it divides commands into different command types and puts them
+in different tables, it makes it very difficult to get things out of the system
+since we can't join tables very easily because it slows the machine down too
+much and causes lag in TAPPED IN this is VERY difficult to work with.  Would it be possible to organize the
+tables in some other fashion and capture all commands in one table' If it doesn't make sense, we can talk
+about the current breakdown, but maybe with Larry's flat file that he's working
+on creating that could be emailed things will be better for researchers to look
+at data more quickly.)</p>
+
+<p>A break down of commands in the current system:</p>
+
+<p>A way to calculate how active a member is in a log in
+session (maybe as simple as dividing # of commands issued by the number issued
+in the session).</p>
+
+<p><b>Notes about things that would be very nice to have for members' sake:</b></p>
+
+<p>Email addresses it would be nice to be able to store up to 2
+addresses for TI members.  This is
+a request we get fairly frequently. 
+This will need to go on the registration and settings page.  </p>
+
+<p>The ability for a person to add an alias to use to log
+in.  For example, I might want
+Hobbes to be the username I remember and not JudiF, but we want people to show
+up as FirstnameLastnameInitial.  An
+alias allows both of these things to happen.  We could ask people to type in the username they want and
+the password they want on the registration page and then create their account
+with this information and have their online name show up when they are logged
+in.</p>
+
+<p>Should all personal recorders have a time stamp on all
+utterances?' Regular members may
+not like seeing date time at the beginning of each line.  Could this be an option that could be
+turned on/off?</p>
+
+<p>It looks like time is recorded in regular time and not unix
+time.  This is GOOD.  Please have time formatted in regular
+time and not unix time everywhere in the system!!!' (In old TI there are lots of places where I get unix and
+have to convert.)</p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+Below is a (slightly edited) transcript from Friday's meeting. Thanks to
+Judi for typing in notes of what folks were saying on the phone! Judi and I
+thought that the meeting went well. Folks had some suggestions as you'll
+read in the transcript, but they suggestions felt pretty focussed and in
+general folks liked our design so far. We spent the entire hour (slightly
+more) just talking the screen mockups on the Iteration 11 page.
+
+Attendees included: Hoyet, Kevin, Billy, Gayle, Margaret, Jamie, Aaron,
+Patti, Judi, and Zaz (last half--she wasn't on the ti2 list but is now!)
+
+Some of the comments that stood out to me:
+- Graphic looks is very nice
+- separation of information from place is well done and clear for the most
+part
+- still let users detach the chat window!
+- use "My Place" instead of My Office (let the user make their place an
+office or home or whatever; keep the name generic so they can do that)
+- use "My Things" or "My Stuff" instead of My Box (again, be more general,
+since carrying a box around may be strange to some users; also, folks on the
+phone conf wanted to say "go to" My Box but it's not a place!)
+- make members create their place if/when they want it, don't give it to
+them automatically when they join but rather have them land in reception
+(they always have My Stuff and don't strictly *need* a home anymore);
+- if/when you do create your own space, you can choose from different
+icons/types (office, tent, home, mansion, etc) from those offer, you can
+also upload your own room image or use one of our stock images
+- at any time you can toggle your own place privacy levels (open to anyone
+or locked) or create another room off your own room for a different purpose
+(limit room creation to just a few... 2 for regular members?)
+- courses should be places so if you're only joining to take a course you
+can just set the course place as your home (again, no need for your own
+office unless you want it)
+- the dynamic neighborhood idea (based on preferences) is great
+
+Below are my notes on how I started the meeting. Mark, feel free to use
+these on Monday if you like, or if you want me to start the meeting, let me
+know.
+
+Patti's Notes for Starting Friday's Meeting
+-------------------------------------------
+We're continuing on the same vein of the challenge of creating a user
+interface that
+
+- maintains the concept of  "place" (an individual user's office, a group's
+clubhouse, a community gatheringplace) for communication,
+
+- and a more traditional "Web" metaphor for interacting  with information
+(bookmarks, files, calendars)
+
+Last time we explored a lot of alternative metaphors and interfaces, and
+asked folks to send in examples of sites they liked. We'll talk about some
+of these sites if we have time after we look at our most recent iteration.
+(Note that we never had time!)
+
+How many people have tried out the new ETP system and looked at our recent
+mockups?
+
+-> Patti projects the url and explains the system
+    http://tappedin.org:8080/ETPservlet/etp/
+
+I recommend that folks view (not edit) the mockup discussion during our
+phone conferences so that we're talking about (not typing) our comments. We
+invite you to come back after the conference and click edit to insert
+comments.
+
+So, everyone click on "It goes to Eleven"
+
+I'll take you through 3 screens, starting with the one you'd see when you
+first enter a particular room.
+
+You may notice a consistent style in these screens, but our colors and
+graphics are not final and we welcome suggestions of other web sites that
+you like in terms of graphical design.
+
+We also don't have actual room content in these mockups yet; that's coming
+soon. For now, we'll focus on the overall interface metaphor.
+
+-> look at the first screen image, what you'd see when you enter a room
+
+On the first screen, you'll notice tabs on the top right. These tabs give
+you access to the "information space". When you click on a tab, the
+information overlays the content of the room or place. So the middle area
+above the chat serves 2 roles: to display room content if you're in that
+mode, or information if you in that mode (click on the tabs).
+
+Note that places have little doors by them; information is accessed through
+the tabs.
+
+Judi and I call this our "lift and separate" model: the information is
+lifted to the top and separated from place, but yet is easily accessible and
+maximizes use of screen real estate. It also hopefully better chunks the
+choices into place versus information.
+
+To us it seems like there are fewer choices on the screen to distract or
+confuse users than in our previous mockups. In reality there are still as
+many choices but we think the chunking gives the illusion of fewer.  We
+think that the distance of the information tabs (farther away from the room
+choices and focus) helps with this too.
+
+-> move on to the 2nd image to show how you browse information
+
+What are your thoughts? (The conversation took off nicely from here, with no
+prodding needed, and lasted an easy hour on these mockups :)
+
+(We ended up scrolling down to the bottom image after this one, to talk
+about Aaron's new use of the building/house icon)
+
+-> move on to the 3rd image and ability to toggle between place and what you
+last viewed in My Box
+
+Note that the the My Box toggle (screen 3) is an issue we're still grappling
+with. For example, we're thinking that the purple tab should be gray, and
+just the purple button should remain.
+
+Friday Meeting Transcript
+--------------------------
+Connected to TAPPED IN on Fri Oct 26 09:52:15 2001 PDT.
+
+PattiWiz projects the URL:
+
+http://tappedin.org:8080/ETPservlet/etp/listUserProjects
+PattiWiz projects the URL:
+
+http://tappedin.org:8080/ETPservlet/etp/listUserProjects
+
+Judi locks the door to TI2 Planning.
+Judi says, "Gayle likes being able to set 3 favorite places...."
+
+Judi says, "Hoyet likes the look graphically...."
+
+Judi says, "color changing with the tabs indicating that change makes it
+            nice and clear."
+
+Judi says, "Gayle when it says that the room is hidden behind could it
+            be put into a separate window..."
+
+Judi says, "Margaret likes detach a lot ...."
+
+Judi says, "and thinks it is important for class time as you need
+            context."
+
+Judi says, "Gayle thinks that you might want to see the MY BOX stuff
+            while you chatting..."
+
+Judi says, "Margaret wondered what you would see in your office..."
+
+Judi says, "We are thinking that what you would see in your office are
+            the public items that you have in your box.  The owner and
+            all people see the same view in the room (Patti)"
+
+Judi says, "margaret made the comment that we don't walk around with
+            "boxes""
+
+Judi says, "gayle says that teachers carry around boxes..."
+
+Judi says, "My briefcase, backpack, cart, shopping cart, ..."
+
+Judi says, "Gayle says my box would resonate with k-8 teachers."
+
+Judi says, "Kevin was wondering about the difference between place and
+            information about the place..."
+
+Judi says, "the second line of the interface (below the room
+            designation) gives you the information about the place."
+
+Judi says, "The neighborhood concept... Margaret likes, Hoyet likes, and
+            Gayle likes."
+
+Judi says, "what would neighborhood mean... (kevin)"
+
+Judi says, "Gayle thinks it would help us find mentors or others with
+            similar interests."
+
+Judi says, "Could be resources too (Hoyet)"
+
+The wall twists and groans as it tries to force itself into the shape of
+BJB [Away]. With a crack it snaps back into shape.
+Judi says, "margaret in stead of My Box just mine...."
+
+Judi unlocks the door to TI2 Planning.
+BJB quietly enters the room.
+BJ's Shadow follows BJB to here.
+Judi locks the door to TI2 Planning.
+BJB waves hi
+
+Judi says, "if we just have My space rather "my office or my home" then
+            people can define it for themselves"
+
+Judi says, "My place"
+
+Judi says, "Margaret's suggestion..."
+
+Judi says, "kevin wonders if the metaphor of neighborhood is the right
+            metaphor...."
+
+Judi says, "since neighborhoods will be malleable."
+
+Judi says, "Billy thinks we need a metaphor tha peole can make
+            assumptions about and be correct."
+
+Judi says, "Hyperplace / hyperneighborhood...."
+
+Judi says, "In this world, place is different than the physical world..."
+
+Judi says, "and in this world place might not be in the same place for
+            everyone ..."
+
+Judi says, "(margaret's comments)"
+
+Judi says, "GayleP speaks up about the group of K-8 teaches they are
+            working with...."
+
+Judi says, "they need to feel space is theirs...  they needed to learn
+            how to get on and where to go and it needs to be simple."
+
+Judi says, "My place is a friendly term."
+
+Judi asks, "are people going to be able to personalize the space?"
+
+Judi says, "that was from Gayle)"
+
+Judi says, "we would like peole to still be able to redecorate and
+            personalize"
+
+Judi says, "Do we need two levels?  Home and office."
+
+Judi says, "Hoyet"
+
+Judi says, "gayle wants My place... and a group place"
+
+The wall twists and groans as it tries to force itself into the shape of
+ZazH. With a crack it snaps back into shape.
+Judi unlocks the door to TI2 Planning.
+ZazH arrives from nowhere.
+ZazH's personal recorder follows ZazH to here.
+Judi locks the door to TI2 Planning.
+Judi says, "Kevin wonders if we've looked at groove."
+
+BJB has looked briefly
+
+BJB . o O ( downloaded it at home )
+Judi says, "in groove if you want to create a new space then you can and
+            you can check off features in the space"
+
+Judi says, "you can decide what features are in the space and different
+            spaces may have different features."
+
+Judi says, "dial in Zaz"
+
+Judi asks, "Gayle with online course would students in the online course
+            would they get spaces?"
+
+PattiWiz waves to zaz
+
+Judi asks, "of their own?"
+
+ZazH [to Patti]: "okay"
+
+ZazH [to Patti]: "i've looked at 11"
+
+Judi says, "i think that people who join with courses would get my box
+            and my place but perhaps the instructor could choose whether
+            people log in to the course place or their own place..."
+
+Judi says, "gayle thinks it would be nice to let instructors make
+            choices for their students."
+
+ZazH asks, "what kind of choices?"
+
+Judi says, "bread crumbs (back to my box: resources) is a bread crumb
+            (gayle)"
+
+Judi says, "Maybe back to my box: resources could be a history...."
+
+Judi says, "(hoyet)"
+
+Judi says, "Margaret we have to be careful of the words we use when we
+            talk about information vs. place."
+
+Judi asks, "question for us:  how does a person get info that is stored
+            in my box into a room other than your office?"
+
+Judi says, "We really need to think about our metaphors....  and make
+            sure we don't break them and that we use the right language."
+
+KevinBR says, "Or...that there is some clear trigger to show when a
+               metaphor is being intentionally broken, extended or
+               transformed, e.g., hyper-office versus office"
+
+GayleP has disconnected.
+GayleP unlocks the door and leaves TI2 Planning.
+Judi says, "if you have any additional commetns on my sketchy note feel
+            free to tpe them in."
+
+BillyS has disconnected.
+ZazH has disconnected.
+BJB . o O ( I'm assuming the meeting is adjourned? )
+PattiWiz nods
+
+Judi says, "yea"
+
+PattiWiz says, "Judi and I are still on the phone with Aaron"
+
+BJB says, "OK.  I'll go down to reception"
+
+BJB teleports to the reception.
+MargaretR has disconnected.
+PattiWiz waves bye
+
+PattiWiz has disconnected.
+
+Disconnected from TAPPED IN on Fri Oct 26 11:41:18 2001 PDT.

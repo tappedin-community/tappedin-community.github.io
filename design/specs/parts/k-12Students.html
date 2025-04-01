@@ -1,0 +1,305 @@
+<html>
+<head>
+<title>Student account spec</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h2>Student Accounts</h2>
+<p><i>Priorities for features indicated in brackets []. Priorities are marked 
+  with a 1 (must have); 2 (should have); or a 3 (may have). If a feature is marked 
+  but its subfeatures are not, this means that the subfeatures have the same priority 
+  as the larger feature. </i></p>
+<p><i>Total days of work, estimated: 52 (drops to 32 days if we drop the filtering 
+  in chat requirement, which would prohibit interaction with students in SAC public 
+  areas anyway). </i></p>
+<p><b>Student user information [mostly priority 1]<br>
+  </b><i>Estimated days: 2 (fairly straighforward)</i></p>
+<p>Student accounts are special accounts that require sponsorship by a regular 
+  Tapped In Member [1]. The only required information for a student account is 
+  a username and password[1]. The real name and real email address for the student 
+  account is optional[1]. If not specified, the real name will be blank and a 
+  bogus value will be generated for the email address (Expresso requires that 
+  all accounts have email addresses)[1]. A member profile will not be kept for 
+  student accounts [1]. </p>
+<p>Members and the sponsor/moderators of a student group can see an info page 
+  for student accounts, accessible from the About link in the student group room. 
+  The student info page will state that the account is a student account, and 
+  show the student's username, the group they are a member of, the owner/sponsor 
+  of the group, and a real name of the student if the sponsor/moderators have 
+  entered one for the student, or the student has set his/her own real name[1].</p>
+<p>Student accounts will not be listed in the Tapped In (or any tenant) directory[2]. 
+  Students also can not see the regular Tapped In (or any tenant) directory[2].</p>
+<p><b>Student and Tapped In member groups, objects, and room access [mostly priority 
+  1] <br>
+  </b><i>Estimated days: 10 (medium hard, lots of details, touches lots of code, 
+  lots to test/debug)</i></p>
+<p>Like guest accounts, student accounts can not create groups or have offices[1], 
+  and they cannot set their home room[1]. By default, they can create items and 
+  upload files to their group room[1]. As in regular group rooms, student group 
+  owners/moderators can change individual student member permissions to disallow 
+  them adding items, etc.[1].</p>
+<p>Student accounts are associated with exactly one (and only one) group room 
+  in the Student Activity Center[1]. Student group rooms are always private[1] 
+  and reside on the 2nd floor of the SAC[1]. Student groups, being private, do 
+  not appear in any group directories[1]; however, they do appear in a Groups 
+  listing in the SAC reception[1], even though they are private. Student group 
+  rooms always have &quot;(K-12)&quot; automatically appended to the end in any 
+  web display.</p>
+<p>The owner/sponsor of the student group can also invite regular Tapped In members 
+  to join the student group, and can make other regular members moderators of 
+  the student group[1]. Tapped In members can not apply to join student groups 
+  however; they can only join a student group if they are invited[1].</p>
+<p>By default, students can enter their group room at any time, but the sponsor/moderators 
+  of the student group can change permissions so that their students can only 
+  enter their group room at certain times, like when the sponsor is logged in 
+  [3]. </p>
+<p>Be default, students can only enter their group room in the SAC[1] and the 
+  public rooms (Reception, conference rooms) in the SAC building. Students can 
+  never go outside of the Student Activity Center (SAC) building [1]. The sponsor/moderators 
+  of a student group can turn off the ability of individual students or their 
+  entire student group to access public SAC rooms [3].</p>
+<p>Regular Tapped In members can enter the SAC Reception area and the SAC public 
+  conference rooms [1]. Guests can not enter the SAC [1].</p>
+<p><b>Student and Tapped In member communication [mostly priority 2, some 3, some 
+  1] <br>
+  </b><i>Esimated days: 29 (transcript work medium hard; differential filtering 
+  mechanisms based on relationships, not just class of user, is complex and may 
+  require new ommunication protocol)</i></p>
+<p>At the end of each day, the group room transcript of chat conversation (if 
+  it is not empty) is emailed to the owner of the student group [2]. This email 
+  also includes all PMs by all students in the group[2]. Transcripts for the SAC 
+  public rooms are also mailed to the public room owner daily [2]. (Est: 7 days 
+  to create generic transcript robot that gathers rooms and disparate PM messages 
+  on a schedule and parses and mails them)</p>
+<p>All users are warned when they enter public SAC rooms that all conversation 
+  in the SAC is recorded for liability reasons [2]. (Est 1 day)</p>
+<p>Students do not get newsletters/ event mailings or any other community mailing[1]. 
+  Students can not change their communication preferences[1] (Est. 1 day)</p>
+<p> (Very hard) Students will not be visible in the Online list in the Tapped 
+  In directory, except to their particular sponsors/moderators, and to Tapped 
+  In staff[3].Students will not be visible to regular Tapped In members in the 
+  Online list of the chat room tab, except to their sponsors/moderators and to 
+  Tapped In staff[3], Student accounts can not send PMs or saved messages to anyone 
+  except the members/sponsors/moderators of the group he/she is in, as well as 
+  Tapped In staff[3]. (Est: 20 days if different members have differential ability 
+  not based on room or account type,but also by relation of individuals; may need 
+  to develop brand new XML protocol between client and server to handle this level 
+  of complexity the right way)</p>
+<p>Note: If students aren't visible in the online tab, how can other teachers 
+  see them and interact with them? Conflicts with earlier requirment that Tapped 
+  In members can interact with students in the SAC public rooms. </p>
+<p>Suggestion: Drop this feature requirement; it's not worth the extreme effort 
+  it will take, and won't allow interaction between Tapped In members and students, 
+  which is a stated desired feature.</p>
+<p><b>K-12 Students Online Discussion Group for Tapped In Members[priority 2]<br>
+  </b><i>Estimated days: 1 (fairly straightforward, need content)</i></p>
+<p>A regular Tapped In group named &quot;K-12 students online discussion group&quot; 
+  will be created for teachers who manage student accounts. so that teachers with 
+  student accounts could talk to each other to exchange ideas, and teachers who 
+  are thinking of doing this can learn about it from others who have done this[1]. 
+</p>
+<p>The group will be seeded with links and notes about activities previous (old) 
+  Tapped In members have done with students online, reflection on what was successful, 
+  and ideas to try[2]. It will also contain links to the terms of bringing K-12 
+  students online[2].</p>
+<p>During the process of creating a Tapped In student group, users are asked if 
+  they want to join this group[2]. If they choose to join, they will be automatically 
+  added as a member[2].</p>
+<p><b>Student Group creation[mostly priority 1]<br>
+  </b><i>Estimated days: 5 (fairly straightforward but lots of details/steps/debugging)</i></p>
+<p>Tapped In members can create a K-12 student group via a new item, &quot;Create 
+  a K-12 student group&quot; under the Tapped In Groups subtab as shown below[1]. 
+  The &quot;Create a K-12 student group&quot; option only appears under the Tapped 
+  In Groups directory; it does not appear under any tenant group directories because 
+  student groups are never associated with tenants[1]. </p>
+<p>Student groups are always private, and automatically appear on the SAC Group 
+  floor upon creation[1].</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td> <font face="Arial, Helvetica, sans-serif"><b><a href="#">Tapped In</a>: 
+      Groups </b></font> 
+      <p><font face="Arial, Helvetica, sans-serif"><a href="#">Create a new Tapped 
+        In group</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Create a K-12 student 
+        group</a> <br>
+        You currently own 0 groups of the 2 you are permitted.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif">Listing 10 of 273 Tapped In 
+        groups, sorted by name.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif">....</font></p>
+      </td>
+  </tr>
+</table>
+<p>When a user clicks &quot;Create a K-12 student group&quot;, the next page they 
+  see describes what a student group is, and summarizes the restrictions on student 
+  accounts[1]. At the bottom of the description is a check box that the user must 
+  check to verify that he/she has read and understands the restrictions and takes 
+  responsibility for the students[1]. </p>
+<table width="100%" border="1" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td> <font face="Arial, Helvetica, sans-serif"><b><a href="#">Tapped In</a>: 
+      <a href="#">Groups</a>: Create a K-12 student group</b></font> 
+      <p><font face="Arial, Helvetica, sans-serif"> Step 1 of 3. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif">Terms of bringing K-12 students 
+        online. [To be written, talking about how students have restrictions and 
+        we've taken lots of precautions so they don't bug regular members, but 
+        you agree to take responsibility because having minors in Tapped In is 
+        greater liability to us, etc.]</font></p>
+      <form name="form1" method="post" action="">
+        <p> <font face="Arial, Helvetica, sans-serif"> 
+          <input type="checkbox" name="checkbox" value="checkbox">
+          I agree to the terms of bringing K-12 students online.</font></p>
+        <p> 
+          <input type="submit" name="Cancel" value="Cancel">
+          <input type="submit" name="Continue" value="Continue">
+        </p>
+      </form>
+      <p>&nbsp; </p>
+      </td>
+  </tr>
+</table>
+<p>If the Tapped In member checks the box and clicks continue, they will begin 
+  the K-12 student group creation process[1]. The first page will ask them for 
+  a group name, a group nickname, how many student accounts should be created 
+  (N) and associated with the group, and a 6-letter prefix for the student accounts 
+  which will be used to generate N student accounts, and a default password for 
+  all of the accounts[1]. Teachers may also optionally join the K-12 Student Online 
+  dicussion group[3].</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td> <font face="Arial, Helvetica, sans-serif"><b><a href="#">Tapped In</a>: 
+      <a href="#">Groups</a>: Create a K-12 student group</b></font> 
+      <p><font face="Arial, Helvetica, sans-serif"> Step 2 of 3. All fields are 
+        required unless otherwise indicated. </font></p>
+      <form name="form2" method="post" action="">
+        <p><font face="Arial, Helvetica, sans-serif"><b>Group Name</b>: </font> 
+          <input type="text" name="textfield">
+          <br>
+          <font face="Arial, Helvetica, sans-serif">(Limit: 28 characters) </font></p>
+        <p><font face="Arial, Helvetica, sans-serif"><b>Nickname</b>: </font> 
+          <input type="text" name="textfield2">
+          <br>
+          <font face="Arial, Helvetica, sans-serif"> (Must be unique with no spaces, 
+          limit: 10 characters. This nickname is used only to auto-generate the 
+          nickname of the group room. )</font></p>
+        <p><font face="Arial, Helvetica, sans-serif"><b>Purpose</b>: </font> 
+          <input type="text" name="textfield23" size="80">
+          <br>
+          <font face="Arial, Helvetica, sans-serif"> (Limit: 100 characters) </font></p>
+        <p><font face="Arial, Helvetica, sans-serif"><b>Grade</b>: 
+          <select name="select">
+            <option value="Choose" selected>Choose one</option>
+            <option value="K">K</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          </font></p>
+        <p><font face="Arial, Helvetica, sans-serif"><b>Number of accounts</b>: 
+          <input type="text" name="textfield22" size="5">
+          <br>
+          (Must be an integer less than or equal to 99)</font></p>
+        <p><font face="Arial, Helvetica, sans-serif"><b>Account prefix</b>: 
+          <input type="text" name="textfield222" size="5">
+          <br>
+          (Must be unique with no spaces, limit 7 characters. This prefix is used 
+          to auto-generate student accounts. For example, if you request 30 accounts 
+          with prefix ahs, accounts ahs01 through ahs30 will be generated.) </font></p>
+        <p><font face="Arial, Helvetica, sans-serif"><b>Default password</b>: 
+          <input type="text" name="textfield223" size="10">
+          <br>
+          (Must be at least 5 characters. All accounts generated will have this 
+          password. You can change individua student account passwords later.)</font></p>
+        <p><font face="Arial, Helvetica, sans-serif"> 
+          <input type="checkbox" name="checkbox2" value="checkbox">
+          (Optional) I want to join the K-12 students online discussion group 
+          for Tapped In teachers. ( </font><font face="Arial, Helvetica, sans-serif">This 
+          is a group for Tapped In members who manage student accounts, to exchange 
+          ideas about online student activities.)</font></p>
+        <p>
+          <input type="submit" name="Cancel22" value="Cancel">
+          <input type="submit" name="Continue22" value="Continue">
+        </p>
+      </form>
+      <p>&nbsp; </p>
+    </td>
+  </tr>
+</table>
+<p>If the Tapped In member fills out the form correctly and presses continue, 
+  they see a confirmation page[1] like the following. (Note that the user will 
+  be automatically returned to the form if values required to be unique (nickname, 
+  prefix) are not unique, so they can re-enter new values.)</p>
+<table width="100%" border="1" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td> <font face="Arial, Helvetica, sans-serif"><b><a href="#">Tapped In</a>: 
+      <a href="#">Groups</a>: Create a K-12 student group</b></font> 
+      <p><font face="Arial, Helvetica, sans-serif"> Step 3 of 3. All fields are 
+        required unless otherwise indicated. </font></p>
+      <form name="form2" method="post" action="">
+        <p><font face="Arial, Helvetica, sans-serif"><b>Group Name</b>: Wiz Kids 
+          Unite<br>
+          <b>Nickname</b>: </font> <font face="Arial, Helvetica, sans-serif">WizKids<br>
+          <b>Purpose</b>: Do wizzy things.<br>
+          <b>Grade</b>: 7</font><font face="Arial, Helvetica, sans-serif"><br>
+          <b>Number of accounts</b>: 30 <br>
+          <b>Account prefix</b>: Wiz (accounts Wiz01 through Wiz30 will be created)<b><br>
+          Default password</b>: <i>(not shown for security purposes)</i><br>
+          <b>Privacy Setting</b>: Private (K-12 student groups are always private)<br>
+          <b>Join K-12 Discussion Group</b>: No<br>
+          </font></p>
+        <p> 
+          <input type="submit" name="Cancel222" value="Cancel">
+          <input type="submit" name="Continue223" value="Back">
+          <input type="submit" name="Continue222" value="Create K-12 Student Group">
+        </p>
+      </form>
+      <p>&nbsp; </p>
+    </td>
+  </tr>
+</table>
+<p>If the sponsor clicks the Create button, a new private student group will be 
+  created [1]. The sponsor will see a confirmation page that tells them that their 
+  new student group has been created in the Student Activity Center, and displays 
+  a link to the group room[1]. They are told that from the group room, they can 
+  optionally configure student accounts by assigning real names and unique passwords 
+  to each account[2], and apply to extend the duration of the project from the 
+  default (6 months?)[3]</p>
+<p>If the user chose to join the K-12 discussion group, the result page will also 
+  contain a link the K-12 Discussion group room.[3]</p>
+<p>The sponsor will also be emailed a list of account names and passwords for 
+  their group, upon creation[1].</p>
+<p><b>Modifying accounts [mostly priority 3, some 2]<br>
+  </b><i>Estimated days: 5 (fairtly straighforward except for expiration, and 
+  how to delete vs. archive?)</i></p>
+<p>In the student group room, the sponsor/moderators can edit student accounts 
+  under a new Edit Student Accounts option under the Settings menu.[2] (Note: 
+  consider merging this with the existing Edit membership option?) An edit link 
+  appears beside each student username; the sponsor/moderators can click on an 
+  edit link to assign a real name to a student account or change the account email 
+  address or password[2]. On the page where a teacher submits updated student 
+  information, there is also a checkbox asking if they want the new information 
+  to be mailed to the student.[3].</p>
+<p>Sponsors can also turn on or off transcripts for the student [3]. (Note, the 
+  ability to turn on or off transcripts is a general priority 3 Tapped In feature.)</p>
+<p>By default, students can not edit their own information, including their real 
+  name or email address. They have no Settings subtab under the Me tab[1]. Sponsors/moderators 
+  can turn on the ability for students to edit their own information[3].</p>
+<p>From the group room Settings menu, the sponsor (only; not the moderators) can 
+  also change the expiration date for up to a year later[3]. Two weeks before 
+  a student group will be expiring, the sponsor will be sent an email telling 
+  them that their group and accounts will go away if they do not extend the duration 
+  in the group settings area[3]. If they do not extend, they will be emailed a 
+  final reminder 2 days before the group will be deleted (if not renewed)[3].</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

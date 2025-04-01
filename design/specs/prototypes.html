@@ -1,0 +1,380 @@
+<html>
+<head>
+<title>Ti2 Prototype Sketches</title>
+
+<link rel="stylesheet" href="global.css">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+<table bgcolor="#999999" width="100%" border="0" cellspacing="0" cellpadding="1">
+	<td>
+	<table bgcolor="#ccccdd" width="100%" border="0" cellspacing="0" cellpadding="3">
+		<td width="99%">
+			TI2 Team Center
+		</td>
+		<td width="1%" nowrap align="right">
+		  <br>
+		</td>
+	</table>
+	</td>
+</table>
+
+<table bgcolor="#cccccc" width="100%" border="0" cellspacing="0" cellpadding="1">
+	<td>
+	<table bgcolor="#eeeeff" width="100%" border="0" cellspacing="0" cellpadding="3">
+		  <td width="60%" nowrap> <small> <a href="index.html">Home</a> 
+            - <a href="team.html">Team</a> - <a href="prototypes.html">Development</A> 
+            - <a href="scenarios/index.html">Scenarios</A> - <a href="documents/index.html">Documents</A> 
+            </small> </td>
+		<td width="40%" nowrap align="right">
+		<small>
+			<br>
+		</small>
+		</td>
+	</table>
+	</td>
+</table>
+
+<h2>Ti2 Design and Development</h2>
+<a href="#plan">Overview</a> <br>
+<a href="#alpha">Alpha Release (Sept 3, 2002)</a>
+<br><a href="#public">Public Release (June 1, 2003)</a>
+<br><a href="#specs">Functional Specifications</a>
+<br><a href="#dev">Development Notes</a>
+
+<p><b><a name="plan"></a>Overview</b></p>
+
+<p>Interface design and <a href="#specs">functional specifications</a> were completed 
+  July 2001 - Feb 2002, and included about 20 design interations (see <a href="mockups/">mockup 
+  evolution</a>) and an <a href="demo/index.html">interactive demo</a>.</p>
+<p>Development planning (evaluation of architectural frameworks, selection, and 
+  familiarization; database design; development environment setup; cvs setup, 
+  etc.) took most of February and March 2002. Implementation began late March 
+  2002. Within each task specification, we focused on completing priority 1; 
+  features (indicated with [1] in the specifications) for the Alpha release.
+<p>
+ We released our Alpha candidate on Sept 3, 2002. We expect to release a Beta candidate in October, and a Public release on June 1, 2003. 
+</p>
+
+<p><b><a name="alpha"></a>Alpha Release (Sept 3, 2002)</b></p>
+<p>The <a href="http://tappedin.org">Alpha release of Tappedin 2</a> is now available! 
+<p>Below is a list of tasks in order of development priority for the Alpha release.</p> 
+<table width="100%" border="1">
+  <tr> 
+    <td width="50%"><b>Task for Alpha release, in order of priority</b></td>
+    <td width="17%"><b>Approximate Start Date (2002)</b></td>
+    <td width="18%"><b>Anticipated Completion Date (2002) for Alpha version</b></td>
+    <td width="15%"><b>Status as of Sept 3, 2002</b></td>
+  </tr>
+  <tr> 
+    <td width="50%">1. Individual rooms, creation and editing</td>
+    <td width="17%">April 1</td>
+    <td width="18%">June 15</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">2. Chat server and client that works on IE</td>
+    <td width="17%">May 15</td>
+    <td width="18%">Aug 15</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">3. Information tabs (Me, Tappedin, Tenants)</td>
+    <td width="17%">May 1</td>
+    <td width="18%">July 31</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">4. Passageways, notes, links</td>
+    <td width="17%">April 1</td>
+    <td width="18%">May 15</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr>
+    <td width="50%">5. Registration, profile update</td>
+    <td width="17%">May 1</td>
+    <td width="18%">May 30</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">6. Discussion boards</td>
+    <td width="17%">July 1</td>
+    <td width="18%">July 31</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">7. File upload/download</td>
+    <td width="17%">April 1</td>
+    <td width="18%">April 30</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">8. Apply the user interface</td>
+    <td width="17%">July 15</td>
+    <td width="18%">July 31</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">9. Group rooms, creation and editing</td>
+    <td width="17%">June 15</td>
+    <td width="18%">Aug 15</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">10. Search </td>
+    <td width="17%">July 30</td>
+    <td width="18%">Aug 15</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">11. Automated test rigs</td>
+    <td width="17%">Aug 15</td>
+    <td width="18%">Aug 30</td>
+    <td width="15%">done</td>
+  </tr>
+</table>
+
+<p><b><a name="public"></a>Public Release (June 1, 2003)</b></p>
+<p>Below is a list of remaining tasks in rough order of development priority for the Beta release in October and the Public release on June 1. Completion of these tasks is contingent upon funding. 
+</p>
+
+<table width="100%" border="1">
+  <tr> 
+    <td width="50%"><b>Remaining tasks for Public (June 1, 2003) release, in order of priority, and contingent upon funding</b></td>
+    <td width="17%"><b>Approximate Start Date, contingent on funding</b></td>
+    <td width="18%"><b>Anticipated Completion Date for Public version</b></td>
+    <td width="15%"><b>Status as of April 2003</b></td>
+  </tr>
+  <tr> 
+    <td width="50%">12. Guest login accounts and restricted access</td>
+    <td width="17%">Sept 15, 2002</td>
+    <td width="18%">Sept 30, 2002</td>
+    <td width="15%">done<td>
+  </tr>
+  <tr> 
+    <td width="50%">13. Data collection for chat and web frames </td>
+    <td width="17%">Sept 15, 2002</td>
+    <td width="18%">Oct 15, 2002</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">14. Help content (make searchable?)</td>
+    <td width="17%">Nov 1, 2002</td>
+    <td width="18%">June 1, 2003</td>
+    <td width="15%">more than half done</td>
+  </tr>
+  <tr> 
+    <td width="50%">15. Add geography (buildings/floor/maps)</td>
+    <td width="17%">Oct 1, 2002</td>
+    <td width="18%">Oct 30, 2002</td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">16. Layout tuning based on beta tester feedback (e.g., highlight selected room menu, group invites) </td>
+    <td width="17%">Oct 1, 2002</td>
+    <td width="18%">Oct 30, 2002</td>
+    <td width="15%">done</td>
+ </tr>
+  <tr> 
+    <td width="50%">17. Admin interface (create tenants and rooms, delete users, etc)</td>
+    <td width="17%">Oct 15, 2002</td>
+    <td width="18%">Dec 1, 2002 </td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">18. Research interface (query activity data)</td>
+    <td width="17%">Jan 1, 2003</td>
+    <td width="18%">Feb 1, 2003 </td>
+    <td width="15%">done</td>
+  </tr>
+  <tr> 
+    <td width="50%">19. System profiling, performance optimizations,
+       integrity checks, load test rigs, etc. </td>
+    <td width="17%">Jan 1, 2003</td>
+    <td width="18%">June 1, 2003</td>
+    <td width="15%">half done</td>
+  </tr>
+  <tr> 
+    <td width="50%">20. A myriad of small features, varying in priority, on
+        on detailed task list (keywords, checking URLs, handling bounced emails, and over a hundred other little enhancements.)</td>
+    <td width="17%">Jan 1</td>
+    <td width="18%">?</td>
+    <td width="15%">started</td>
+  </tr>
+  <tr> 
+    <td width="50%">21. Chat enhancements (buddies, timestamp/font/sound preferences, click on location to go, project url, system wide announce)</td>
+    <td width="17%">Pending funding</td>
+    <td width="18%">?</td>
+    <td width="15%">not started (have detailed specs)</td>
+  </tr>
+  <tr> 
+    <td width="50%">22. Tenant/TI tab libraries (required keywords, public/private, etc)</td>
+    <td width="17%">Pending funding</td>
+    <td width="18%">?</td>
+    <td width="15%">not started (need specs)</td>
+  </tr>
+  <tr>
+    <td width="50%">23. Calendar</td>
+    <td width="17%">Pending funding</td>
+    <td width="18%">?</td>
+    <td width="15%">not started (have partial specs)</td>
+  </tr>
+  <tr> 
+    <td width="50%">24. Course Rooms</td>
+    <td width="17%">Pending funding</td>
+    <td width="18%">?</td>
+    <td width="15%">not started (have specs)</td>
+  </tr>
+  <tr> 
+    <td width="50%">25. Internationalization, localization</td>
+    <td width="17%">Pending funding</td>
+    <td width="18%">?</td>
+    <td width="15%">not started (but support exists in the framework)</td>
+  </tr>
+  <tr> 
+    <td width="50%">26. Conform to accessibility standards (for visually impaired, etc)</td>
+    <td width="17%">Pending funding</td>
+    <td width="18%">?</td>
+    <td width="15%">not started (need to review requirements and implement) <td>
+  </tr>
+</table>
+
+<p></p>
+<hr size="1">
+
+<p><b><a name="specs"></a>Functional Specifications</b></p>
+<p>Members of the ti2 team led the design of the functional specifications from 
+  July 2001 - Feb 2002, with regular feedback from our advisory team, interaction 
+  designer, and tappedin members. Items were assigned priorities of 1 (must have), 
+  2 (should have) or 3 (may have).
+<p> The specs below are not fully up-to-date with the current implementation, 
+  and not all items are completed, but they give a flavor of the design process 
+  and scope of some of the remaining features to be implemented. 
+<p>Room types</p>
+<ul>
+  <li><a href="roomelements/index.html">Individual Offices</a> ( Patti )</li>
+  <li><a href="groups/groupspec.html">Group Manager spec</a> ( Melissa )</li>
+  <li><a href="course_mgr/funcspec/cm_funcspec-2-04-02.htm">Course Manager spec</a> 
+    and <a href="course_mgr/">prototype</a> ( Zaz )<br>
+  </li>
+</ul>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="top"> 
+    <td width="40%"> 
+      <p>Common elements of most rooms (Courses have more; see the Course specs 
+        above for more info) </p>
+    </td>
+    <td width="60%"><br>
+      <br>
+      Notes</td>
+  </tr>
+  <tr valign="top"> 
+    <td width="40%"> 
+      <ul>
+        <li><a href="parts/roomelements/welcome/index.html">Welcome</a> ( Patti ) </li>
+        <li> <a href="parts/roomelements/aboutus/index.html">About Us</a> ( Patti )</li>
+        <li><a href="parts/roomelements/calendar/index.html">Calendar</a> ( Judi )</li>
+        <li><a href="parts/roomelements/discussion/index.html">Discussion</a> ( Melissa 
+          and Patti )</li>
+        <li><a href="parts/roomelements/files/index.html">Files</a> ( Patti ) 
+        <li><a href="parts/roomelements/links/index.html">Links</a> ( Patti ) 
+        <li><a href="parts/roomelements/passageways/index.html">Passageways</a> ( Patti 
+          )</li>
+        <li><a href="parts/roomelements/settings/index.html">Settings</a> ( Patti )</li>
+      </ul>
+    </td>
+    <td width="60%"> <br>
+      About Us link won't be included on individual offices<br>
+      <br>
+      Discusson will by request only for individual offices<br>
+      <br>
+      <br>
+      <br>
+      Courses and groups have additional settings</td>
+  </tr>
+</table>
+<p>Directory tabs</p>
+<ul>
+  <li><a href="parts/metab/MeTabspec.htm">Me Tab, includes My Profile</a> ( Melissa 
+    )</li>
+  <li><a href="parts/directories/index.html">TAPPED IN and Tenant</a> ( Zaz )</li>
+</ul>
+<p>Help and Search tabs</p>
+<ul>
+  <li><a href="parts/help.html">Help</a> (Judi and Zaz)</li>
+  <li><a href="parts/search/index.html">Search</a> ( Melissa )</li>
+</ul>
+<p>Miscellaneous</p>
+<ul>
+  <li><a href="parts/communication/index.html">Communication</a> (Melissa and Patti)</li>
+  <li><a href="parts/error_messages.htm">Error messages</a> (Melissa)</li>
+  <li><a href="parts/research.html">Research tools</a> (Judi)</li>
+  <li><a href="parts/adminSpec.pdf">Administration tools</a> (Zaz and Judi)</li>
+  <li><a href="parts/dearAbbySpec.pdf">Dear Abby feature</a> (Zaz)</li>
+  <li><a href="parts/guests.html">Guests</a> (Patti)</li>
+</ul>
+<hr size="1">
+<p><b><a name="dev"></a>Development Notes</b></p>
+<p>After a review of several candidate architectures, the TI2 technology team 
+  (Larry, Zaz, Patti) decided to build on <a href="http://www.jcorporate.com/">JCorporate's 
+  Expresso Framework</a>. Expresso is a three-tier, model-view-controller architecture 
+  implemented in Java, build on top of the popular <a href="http://jakarta.apache.org/struts/">Jakarta 
+  Struts Framework</a>. We are also applying this framework to another SRI project 
+  called <a href="http://padi.sri.com/">PADI</a> also currently under development 
+  by the same team of developers.</p>
+<p> Our chat server and client implementation is based on <a href="http://nfcchat.sourceforge.net/">NFCChat</a> 
+  and <a href="http://openjms.exolab.org/">OpenJMS</a>. </p>
+<p>All of these packages (Expresso, NFCChat, OpenJMS) are 100% Java, open source, 
+  and have licenses that allow commercial sale of derivative products. Our development system is run daily on Windows, Mac OS X, and Solaris; it is a demonstrably cross-platform server solution, which is good new for clients who may want to run their own instance of TAPPED IN on their own servers.</p>
+<p>More about Expresso, from the <a href="http://www.jcorporate.com">Jcorporate 
+  Website</a>:</p>
+<p>Expresso is a... &quot;Web Application Development (AD) Framework designed 
+  to shorten time-to-delivery of Web-based, business transactional applications. 
+  An open standards based library of extensible Java Server components for providing 
+  services to web-based applications so the developer can concentrate on application 
+  logic. Expresso is a powerful and broad architectural framework with extensible 
+  Java components for developing database-driven web applications based on open 
+  standards. Expresso integrates with Struts which is a MVC light weight framework 
+  emphasizing presentation and application configuration, and bringing a powerful 
+  tag library to Expresso; whereas Expresso adds capabilities for database-stored 
+  security, robust object-relational mapping, background job handling and scheduling, 
+  self-tests, log4j logging integration, automated table manipulation, database 
+  connection pooling, email connectivity, event notification, caching, internationalization, 
+  XML automation, testing, registration objects, configuration management, automatic 
+  database maintenance and JSP tag library etc. Use Expresso in both non EJB/J2EE 
+  sites, as well as scale upwards using J2EE&#153; technology. Expresso enables 
+  developers to decrease their learning curve and time to solution, which translates 
+  directly into reduced costs and increased revenue for customers.&quot;</p>
+<p>In a nutshell, the Exresso Framework is a large toolkit of classes that helps 
+  developers create an extensible development environment for their application. 
+  The framework can be divided technically into four essential parts: schemas, 
+  database object persistence, controller design, and the rest of the kit, which 
+  involves job control, utilities, etc.</p>
+
+<P>
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR>
+<TD COLSPAN=2>
+<CENTER>
+<HR size=1 noshade>
+</CENTER>
+</TD>
+</TR>
+<TR>
+    <TD WIDTH="100%"> <FONT SIZE=1> &copy;1996-2002<a href="http://ctl.sri.com"> 
+      Center for Technology in Learning</a><br>
+TAPPED IN is a trademark of <a href="http://www.sri.com">SRI International</a>.
+<br>
+</FONT>
+</TD>
+<TD VALIGN=TOP ALIGN=RIGHT>
+<FONT size=1>
+[<A Href="#top">Top</A>]
+</FONT>
+</td></tr>
+</table>
+
+
+</body>
+</html>

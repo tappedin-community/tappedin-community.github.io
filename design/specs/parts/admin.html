@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Admin Interface</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<h2>Administration Specification</h2>
+<p>Tenant admins only have appropriate powers over rooms in their own tenant building 
+  (entering locked rooms, editing rooms and items in<br>
+  rooms etc.) and users/groups in their tenant [1]. TI Admins have all powers 
+  in all rooms[1]. Many of these actions should allow the administrator to optionally 
+  email the affected users to notify them of the change (the email would be automatially 
+  generated) [2]<br>
+</p>
+
+  Admin or Staff accounts can edit individual users and: 
+<ul>
+  <li>change username[1]</li>
+  <li> reset password[1]</li>
+  <li>change number of groups user can own (TI only)[1]<br>
+  </li>
+  <li>make the user a help desk volunteer (TI only)[1]<br>
+  </li>
+  <li>make the user a tenant staff member[1]<br>
+  </li>
+  <li> make the user a TI staff member (TI only)[1]</li>
+  <li>edit a user profile[2]<br>
+  </li>
+</ul>
+<p>Admin or Staff can change users in batches:<br>
+</p>
+<ul>
+  <li>add user to a tenant (TI only)[1]</li>
+  <li>remove user from a tenant[1]</li>
+  <li>delete users (TI only)[1]</li>
+  <li>create batch accounts from tab delimited file, and optionally assign one 
+    password to all accounts [3]</li>
+</ul>
+<p>Admin or Staff can edit tenants and buildings</p>
+<ul>
+  <li>add tenant (TI only) [1]</li>
+  <li>remove tenant (TI only) [1]</li>
+  <li>rename tenant (TI only) [1]</li>
+  <li>change tenant description [1]<br>
+  </li>
+  <li>create buildings and floors [2]</li>
+  <li>change building or floor location (TI only) [2]</li>
+  <li>change building icon [2]</li>
+  <li>move rooms to different floors [3]</li>
+</ul>
+<p>Admin or Staff can edit groups and rooms</p>
+<ul>
+  <li>reset group expiration date [3]<br>
+  </li>
+  <li>change group tenant [2]</li>
+  <li>change group privacy setting [3]</li>
+  <li>(delete groups needs to spec'd) [3]</li>
+  <li>change file quota for a room [3]</li>
+  <li>change the number of groups a user can own [3]</li>
+</ul>
+<hr noshade>
+<p>Notes from Judi, which should all be reflected above</p>
+<p>Audience TAPPED IN staff and partner organization staff. TAPPED IN staff will 
+  have more abilities than org staff and will be able to see data on ALL members. 
+  Org staff will just be able to perform administrative tasks on people in their 
+  organization.<br>
+  Account Management:<br>
+</p>
+<ul>
+  <li>Create Batch accounts (from a tab delimited file if an organization wants 
+    to do so). Assign one password to all accounts made in a batch or for a group 
+    (useful for a training). <br>
+  </li>
+  <li>Reset passwords. Org admin should be able to reset passwords of people in 
+    their organization. There should be a way to randomly generate a password 
+    or reset it to the password the person requests. (The ability to reset it 
+    to the password a person requests may not be as necessary in the new system 
+    as it was in the old command line system. Members had difficulty changing 
+    their password. It would be nice if we could email reminders of current passwords. 
+  </li>
+  <li>Delete accounts (TI staff only). When accounts are deleted there should 
+    be two modes, immediate deletion and deletion after a warning. Immediate deletion 
+    occurs as soon as the TI staff member hits the button and an email notice 
+    is sent to the member (now ex- member) notifying them that their account has 
+    been terminated. The second mode, deletion after a warning, is designed so 
+    that our database isn&#146;t filled up with inactive members who are too lazy 
+    to ask to be deleted. TI staff specify a length of time, and if a member has 
+    not logged in for that duration (e.g., 6 months) they are sent an email telling 
+    them their account will be deleted in X days if they do not log in (or reply 
+    to the message if possible). In this warning email, the member will be sent 
+    a reminder of his / her username and password and perhaps an announcement 
+    from a group or about a session that corresponds to his/her interests as designated 
+    on the registration form. </li>
+  <li>De-affiliate members from a group (for example, Pepperdine&#146;s graduates 
+    may still want to be a member of TAPPED IN, but Pepperdine may not want them 
+    affiliated with them any more since they aren&#146;t students. Admin&#146;s 
+    for orgs should be able to change members no longer affiliated with their 
+    organization to a regular member. This de-affiliation ability may be important 
+    if a future business model is going to charge a subscription fee to members. 
+    For TI staff admin&#146;s they should be able to change a member&#146;s organization 
+    affiliation. For example, people may have joined on their own and then their 
+    organization starts working with TI. We should be able to have a way to change 
+    their affiliation to that new org. Also, it should add a new affiliation automatically 
+    if an organization submits a batch membership list and has someone on the 
+    list who already has a TI account.&#133; Note, this assumes that there is 
+    a way a member can be able to be affiliated with two orgs simultaneously. 
+    For example, we had a lot of members in LACOE who are also affiliated with 
+    Pepperdine. It may be the case that an organization pays to have an &#147;upgrade&#148; 
+    to membership for their members e.g., more storage space. If that&#146;s the 
+    case, the Pepperdine member should get that upgrade and if LACOE does that 
+    too then the member should get two upgrades&#133; right? 
+    <ul>
+      <li>Question, is two organizations enough to have a member affiliated with? 
+        How many do we think one person may be associated with at any one time? 
+        <br>
+      </li>
+      <li>There are also questions about what happens to a person&#146;s stuff 
+        in a group room if they are de-affiliated? Do we assume since they uploaded 
+        the files/links to the room that they stay affiliated with the room even 
+        though they may no longer have access to the room? <br>
+      </li>
+    </ul>
+  </li>
+  <li>Change User names other personal info (email addresses etc., the user should 
+    be able to update all of his/her info as well in settings, but it&#146;s good 
+    for an admin to be able to do it too).<br>
+  </li>
+  <li>Set/reset default of amount of space for members file storage either by 
+    individual member or by group. (TI staff only)<br>
+  </li>
+  <li>Set level of permissions on the user when you create accounts (TI-Admin 
+    can set any level, Org-admin can set sub-admins for their org) Levels include 
+    Course instructor, regular member, Org-Admin, TI-Admin, K-12 student, potentially 
+    parent?? For courses we need to determine how we are going to do this since 
+    courses involve payment.</li>
+</ul>
+</body>
+</html>

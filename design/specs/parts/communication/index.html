@@ -1,0 +1,482 @@
+<html>
+<head>
+<title>Communication Specs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<b> 
+<h2>Communication Tools</h2>
+</b>
+<p><small><i>Priorities for features indicated in brackets []. Priorities are 
+  marked with a 1 (must have by Sept 2002); 2 (should have by December 2002); 
+  or a 3 (may have my June 2003). If a feature is marked but its subfeatures are 
+  not, this means that the subfeatures have the same priority as the larger feature.</i></small> 
+</p>
+<p><b><br>
+  </b>Communication tools will be integrated throughout the TI2 environment to 
+  support all of the other features (i.e. courses, groups, etc.). Users must be 
+  able to work together synchronously as well as asynchronously. Some of the tools 
+  are room- or place-based meaning that the message is only seen in a certain 
+  location while other tools are user-based meaning the message goes either to 
+  the user's personal email account or a window appears where ever they are in 
+  Tapped In as is the case with Private Message.<br>
+  <br>
+  Communication tools will include: </p>
+<table BORDER cellspacing=1 cellpadding=5 width=100%>
+  <tr> 
+    <td width="14%" valign="TOP">&nbsp;</td>
+    <td width="35%" valign="TOP"> <font face="Times"> 
+      <p><b>Room-based (many to many; one to many)</b> 
+      </font></td>
+    <td width="51%" valign="TOP"> <font face="Times"> 
+      <p><b>User-based (one to one; one to many)</b> 
+      </font></td>
+  </tr>
+  <tr> 
+    <td width="14%" valign="TOP" height="72"> <font face="Times"> 
+      <p><b>Synchronous</b> 
+      </font></td>
+    <td width="35%" valign="TOP" height="72"> <font face="Times"> 
+      <p>Chat<b> [1]<br>
+        <br>
+        </b>Webpage projection <b>[1] <br>
+        <br>
+        </b>Shared whiteboard <b>[3]</b></p>
+      </font></td>
+    <td width="51%" valign="TOP" height="72"> <font face="Times"> 
+      <p>Private Message (PM) <b>[1]</b> to reach members in any room<br>
+        <br>
+        Broadcast Message <b>[2] </b>for tappedin staff only?</p>
+      </font></td>
+  </tr>
+  <tr> 
+    <td width="14%" valign="TOP"> <font face="Times"> 
+      <p><b>Asynchronous</b>
+      </font></td>
+    <td width="35%" valign="TOP"> <font face="Times"> 
+      <p>Saved Messages <b>[1] </b>on Me tab</p>
+      <p>Announcements<b> [2] </b>in group and course room</p>
+      <p>Discussion Board<b> [1] </b>available in all rooms. </p>
+      </font>
+      <blockquote>
+        <p><font face="Times">Email options on discussion boards to get email 
+          of individual postings<b> [2]</b> or digests<b> [3]</b></font></p>
+      </blockquote>
+      <font face="Times">
+      <p>Polls <b>[3] </b>in group and course room
+      </font></td>
+    <td width="51%" valign="TOP"> <font face="Times"> 
+      <p>Mailing lists <b>[1]</b>
+      </font></td>
+  </tr>
+</table>
+<font face="Times"> 
+<p><br>
+</p>
+<h2><b>Synchronous Communication</b> </h2>
+</font> 
+<p><font face="Times"><b> Chat [1]</b></font></p>
+<p><font face="Times"> A chat window will appear on every room (see figure below). 
+  The chat window includes</font></p>
+  <p>
+<ul>
+  <li>Input areas for entering chat and PM text <b>[1]</b> 
+  <li> Ouput areas for displaying chat and received PM messages<b> [1]</b> 
+  <li>Awareness tabs showing usernames for who is in the room, who is online, and 
+    who and where your buddies are <b>[1]</b> 
+  <li>A font preferences menu that lets theuser change the font size<b> [1]</b> 
+    or color <b>[2]</b>. 
+  <li>Actions menu that allows the user to 
+    <ul>
+      <li>set their mood/status<b> [2] </b>to some text value like &quot;busy&quot;, 
+        which appears by their name when they talk or PM</li>
+      <li>become temporarily unavailable<b> [2] </b>where they can't see or send 
+        chat or pm messages but can still move around and see who is online and 
+        others can see them</li>
+      <li>project urls <b>[1] </b>to others in the room. the url will pop up in 
+        a new window. subsequent projections will replace same one window</li>
+      <li>jot notes onto a scratch pad <b>[1]</b> to compose longer thoughts to 
+        paste into chat, or paste in chat text they want to save and read slowly</li>
+      <li> share a whiteboard<b> [3] </b>way in the future, to be spec'd out later</li>
+      <li>detach the chat window to make it bigger<b> [2] </b>and the detached 
+        window will have a reattach menu option</li>
+    </ul>
+</ul>
+<p>The format of messages in the output window is not finalized, but will likely be of one 
+  of the following forms:</p>
+<blockquote> 
+  <p>Mark: has your class started?<br>
+    Mark says, &quot;has your class started?&quot;</p>
+</blockquote>
+<p>The MOO substituted pronouns, so that text you wrote appeared to you as &quot;You 
+  say,....&quot; while appearing to others as &quot;Mark says,..&quot;. This feature 
+  could be provided as an option or user preference<b> [2]</b>. The first version 
+  can show the same text to all users, including the speaker (i.e., Mark will 
+  see &quot;Mark says....&quot; in the output field, the same as what others see).</p>
+<font face="Times">
+<p><img src="chatopen.gif" width="695" height="207"></p>
+</font> 
+<p><font face="Times">Dimensions of the various areas should be similar to that 
+  shown above, but may vary when implemented. For example, the Here/Online/Buddies 
+  area is about 200 pixels wide above, and the rest of the width of the page goes 
+  to the chat area. The input fields should fill the space up to the Say and PM 
+  buttons, unlike in the image above. The input areas for chat and pm will be 
+  one line each. If we allow resizing, the chat output area will be the area to 
+  grow or shrink.</font></p>
+<p>200 pixels wide, and the rest of the width of the page goes to the chat area. 
+  He has the chat menu area (Actions, Fonts) as about 35 pixels high, and the 
+  input fields (chat and pm together) area as about 70 pixels high. See</p>
+<p><font face="Times">The chat should handle at least 500 simultaneous logins 
+  with up to 50 people in one room, or 500 simultaneous users in one room listening 
+  to one speaker. <b>[1]</b> Support for up to 1000 simultaneous users is desired<b> 
+  [3]</b>. Some rooms may also restrict the number of speakers or enforce moderated 
+  discusson <b>[2]</b>.</font></p>
+<p>Chat settings and preferences (like font size, tab placement, mood/status, 
+  etc.) are not saved across sessions.</p>
+<ul>
+  <ul>
+  </ul>
+</ul>
+<p><b>Transcripts  [1]</b></p>
+<p><font face="Times">Chat transcripts should be saved and emailed to users upon 
+  logout.</font> [1] </p>
+<p>PM messages will <i>not</i> appear in the room chat transcript. PM messages (if any) will  instead be saved in a second, separate transcript that is also emailed to users upon logout, if any PMs were sent or received [1]. </p>
+<ul>
+  <ul>
+  </ul>
+</ul>
+<p><b>Private Message [1]</b></p>
+<p>To send a PM, a user clicks on an indicator beside a username in the Here, 
+  Online, or Buddies list. For the advanced Swing UI, the indicator is a fac  icon. For the basic applet UI (developed first), the indicator will be the text &quot;(pm)&quot;. The username then appears beside the PM text field 
+  at the bottom. The user can then enter text into the PM field and click the 
+  PM button to send the text to the other user.</p>
+<p>When a pm is received, an audio &quot;beep&quot; will play by default. [2] The user can turn on or off this audio setting in their settings, under Me/Settings.[2]</p>
+<p>Private messages will be visually distinguished from other chat messages in 
+  the output area. In the basic applet UI (developed first), they will have  a prefix like &quot;(*PM)&quot;,<b>[1]. </b>In<b> </b>the advanced Swing UI, they may be displayed in bold text [2]. If the sender and recipient are in different rooms, the room name will appear in the PM [1]. For example, If I'm Joe and Mark sends me 
+  a PM, I will see</p>
+<blockquote>
+  <p>(*PM) from Mark in Reception, &quot;Can we talk after the meeting?&quot;</p>
+</blockquote>
+<p> and Mark will see</p>
+<blockquote>
+  <p>(PM to Joe in Joe's Office) Mark says, &quot;Can we talk after the meeting?&quot;</p>
+</blockquote>
+<p>If a user sends a PM to another user who is not logged in or logged in and 
+  not available, that message is saved in the other user's Saved Messages. The 
+  sender will then see an additional line like:</p>
+<blockquote> 
+  <p> (PM to Joe is saved, Joe is unavailable: It's proposal crunch time. I will 
+    try and get back to everyone ASAP...)</p>
+</blockquote>
+<p>We could make the name of a person in the output area clickable for fast PM 
+  replies, but this may be technically difficult<b> [3]</b>.</p>
+<p><b>Emote [2]</b></p>
+<p>As we do now in TAPPED IN, if a user types a special character (like a &quot;:&quot;) 
+  before what they type in an imput field, it will be displayed as an emote. For 
+  example, if I type the following into either the SAY or PM input field</p>
+<blockquote>
+  <p>I'm happy</p>
+</blockquote>
+<p>and press Say or PM, the recipient(s) would see one of</p>
+<blockquote>
+  <p>Patti: I'm happy<br>
+    Patti says, &quot;I'm happy&quot;</p>
+</blockquote>
+<p>But if I type</p>
+<blockquote>
+  <p>:smiles</p>
+</blockquote>
+<p>they would see</p>
+<blockquote> 
+  <p>Patti smiles</p>
+</blockquote>
+<p>We could also consider adding an Emote... item to the Actions menu <b>[3]</b> 
+  E.g., we could prepopulate a 2nd level menu with emote text, like smiles, laughs, 
+  waves, and allow a Custom Message to be set. Selecting an emote item could put 
+  it in the chat input area. </p>
+<p><b>Broadcast [2]</b></p>
+<p>We may need to support broadcast messages by TAPPED IN staff to all users. 
+  Like emotes, we could do this with a special keyboard character or command, 
+  especially since it will only be available to a few, select (staff) members. 
+  Broadcast messages may appear on the bottom left status area of the window (see 
+  Status Area below).</p>
+<p><b>Font Prefs [1]</b></p>
+<p><font face="Times">If a user changes the font size in the Font prefs menu, 
+  then the font size of the 2 input areas and 1 output area will change to this 
+  size [1]. No other fonts (the menus, the lists, etc.) will change. </font></p>
+<p><font face="Times">If a user chooses a color from the Font prefs menu, then 
+  all of her messages will appear in this color (to herself and to others) in 
+  the output window. [2]</font></p>
+<p><font face="Times"></font>TBD: Font menu may be moved to the Actions menu. 
+  If so, it may be split out into to items: Set My Font Color and Set Font Size.</p>
+<p><b>Set Status [1]</b></p>
+<p>Users can indicate their &quot;moods&quot; or &quot;status&quot; via the Actions/Set 
+  Status button. These are just tags (like happy, busy, cooking) and these do 
+  not do<br>
+  anything except appear by their name when they talk or when you PM them.</p>
+<p> For example, if Mark selects Actions/Set Status/busy, any text he types will 
+  appear in chat or PM with at [busy] flag, as so: </p>
+<blockquote> 
+  <p>Mark [busy]: has your class started?</p>
+</blockquote>
+<p>A set of predetermined status options will appear in the 2nd tier menu (or 
+  as a popup window if tiered menus are not technically possible). These preset 
+  options include: busy, out to lunch, be right back, stepped out. </p>
+<p>A final menu option called &quot;custom message&quot; [2] will appear below 
+  these preset options, and pop up a text dialog if selected. In this dialog the 
+  user can type custom status text and it will be set.</p>
+<p><b>Become Unavailable [2]</b></p>
+<p>Folks who really want to be completely unavailable can use the &quot;Become 
+  Unavailable&quot; option under the Action menu. When you are in unavailable 
+  mode, others can see that you are online and where you are, but they cannot 
+  talk to you in real time. You can see who all the information in the awareness 
+  tabs (who is online, here, your buddies) and can move around to different rooms, 
+  but you cannot chat or PM to people. Basically, unavailable mode means you have 
+  awareness and movement, but no communication.</p>
+<p>If you choose Become Unavailable, then your chat area gets covered with a message 
+  saying that others can't contact you now, a text field appears where you can 
+  edit your unavailable message (what others see if they try to PM you), and a 
+  &quot;Become Available&quot; button appears that you can click to return to 
+  chat or PM.</p>
+<p>In the Here/Online/Buddies tabs, unavailable users appear in grey font, while 
+  available users are in black font. Under the room column in the Online and Buddies lists, unavailable users appears as &quot;(unavailable)&quot;</p>
+<p> If you get a PM while you're unavailable, you will be notified in this area 
+  in red text that your new PMs are in your saved messages. The person who PM'd 
+  you will get your unavailable message.</p>
+<p>Contents of the chat window while you are in unavailable mode will not be recorded 
+  to your transcript. You only get to see what you hear and what others expect 
+  you to hear. If you are unavailable then others may want to say things assuming 
+  you can't hear them. If you can get a transcript of what they said, it may violate 
+  their privacy. If you want to hear a discussion, you must be available.</p>
+<p><img src="chatunavailable.gif" width="725" height="235"></p>
+<p><font face="Times"><b>Project URL [1]</b></font></p>
+<p><font face="Times">To project a url to other users in the same room or to an 
+  individual, the user types a url into the Say field (to project ot the room) 
+  or the PM field (to project to an individual) and then selects Project Url from 
+  the Actions menu. The url will then open in a new window on the screen of the 
+  recipient(s) (everyone in the room, or the individual).</font></p>
+<p><font face="Times">If the user just presses the Say or PM button and a URL 
+  is in the input field, it will be treated as normal text, although future versions 
+  may make the url text into a link so that users can click on it at will to pop 
+  up a new window with the URL [3].</font></p>
+<p><b>Scratch Pad [2]</b></p>
+<p>When a user selects Scratch Pad from the Actions menu, a new window appears 
+  with a text area in which they can compose longer message. The scratch pad will 
+  have a &quot;Send to Chat&quot; enables the user to send the text to the Chat, 
+  or they can copy and paste the text into the chat or PM field when they are 
+  ready. There is no save feature on the scratch pad; once the window is closed, 
+  the text is gone.</p>
+<p>We coujld also add a Don't Auto Scroll Output option to the Action menu to 
+  let the user turn off output field scrolling temporarily.</p>
+<p><b>Detach [2]</b></p>
+<p>When a user selects Action/Detach, a new window appears (as in the current 
+  TAPestry client) that they can resize and make bigger for typing and viewing 
+  conversations. The layout of this window is not yet determined, but will be similar to the layout of the chat pane above except bigger and resizable.</p>
+<p>Similar to the attached chat window, it will include an output 
+  field, and chat and PM input field and buttons.In addition, it will include a second output window for PM messages only.  </p>
+<p>It will  include the same 
+  Action and Font menu, except the Action menu will have a &quot;Reattach&quot; 
+  option instead of a Detach option. By default, the input area will be 3 lines, 
+  and the output area will increase or shrink on resize.</p>
+<p><font face="Times" color="#000000"><b>Here, Online, Buddies[1]</b></font></p>
+<p>The Here, Online, and Buddies tabs show alphabetical lists of usernames. The 
+  people are listed by login/username, not real name, so each entry is unique. 
+  In some cases the location of the user is shown. Up to X (10?) characters of 
+  the user's location will be displayed.</p>
+<p>We may restrict usernames to X characters in length so as not to have to truncate them in the display. If so, in initial registration we may generate up to Y (5?) suggestions for usernames and let the user choose a name, rather than free-form entering (so we don't get any &quot;hotMama&quot;s!) The algorithm would present  up to Y  options that are some combination of  first name, last initial, middle initial, and a number if necessary. [we need a registration spec]</p>
+<p> Here is an alphabetical list of all people in the room that you are in. Online 
+  is an alphabetical list of all people who are logged in to TAPPED IN, and where 
+  they are right now. Buddies is an alphabetical list of people who you have bookmarked 
+  as your favorites in TI. All of your buddies show up in the Buddies tab, whether 
+  they are online or not. If they are online, their location is shown; if they 
+  are offline, the location appears as &quot;Offline&quot;.</p>
+<p>In the here, online, and buddies list, names are underlined and clicking on 
+  them will show more information about that user.<b> [2]</b> The information 
+  may replace the room view, as it would if you clicked on a user under the People 
+  tab. If this is technically do from the chat applet, we will drop it and only 
+  allow clicking on a user name from the HTML area (e.g., under People) in the 
+  first release.</p>
+<p>Clicking on a location in the Buddies or Online tab should transport the user to that location [1]. If the location name is longer than can be viewed in the column, it is truncated in some manner. We may generate &quot;short names&quot; for all rooms automatically, e.g., two rooms both called Math Lab Room may appear as MathLab1 and MathLab2. We may also let the room creator edit the &quot;short name&quot; for a room, but we will suggest a short name that they can just accept. Rolling your mouse over a room name in an awareness tab should show the long (full) name as a tool tip or in the status pane [2].</p>
+<p>A &quot;face&quot; icon appears beside peoples names in all tabs or the text &quot;pm&quot; may appear if icons are hard to support. Clicking 
+  on the face icon (or pm text) puts a user's name in the PM area so you can PM them. <b>[1]</b></p>
+<p>An &quot;activity&quot; icon may also appear beside names <b>[2].</b> This 
+  icon is a circle in some shade of blue. Dark blue indicates active (they have 
+  typed recently). The color fades one shade for every ten minutes that the user 
+  hasn't typed. If the user hasn't typed in 100 minutes or longer, the circle 
+  is white. Unavailable users are treated the same as available users. If Mark 
+  is talking actively and then goes unavailable, his username goes gray immediately 
+  but the circle beside his name is still dark blue. Ten minutes later it goes 
+  a shade lighter, etc. Buddies who are offline do not have a circle icon beside 
+  their name.</p>
+<p>When a user clicks a tab on the client, the server is notified of which tab 
+  is showing, and keeps track. When the Here tab is showing, the server sends 
+  continual update only for changes in information for that particular room.. 
+  When a user clicks the Online or Buddies tabs, the client does a &quot;pull&quot; 
+  to get a snapshot of who is online, and perhaps displays a timestamp of the 
+  snapshot on the tab info. The Online and Buddies tabs do not update continuously. 
+  If the user click on the Online or Buddies tab again, it does another pull. 
+  In a later release, we may add a &quot;continually update&quot; option for tabs.<b>[3]</b></p>
+<p>Note that if we become wildly popular and the Online tab has thousands of users 
+  in it, it may become useless. We may drop it at that point, and only offer Search 
+  in the upper html area (above chat, not part of the chat client).<br>
+</p>
+<p>Users can edit their Buddies list from their Me/People tab <b>[1]</b>. They 
+  may also be able to edit it from the Buddies tab <b>[2]</b></p>
+<p>In the edit buddies area, the user sees a list of their buddies with a remove 
+  link beside each name, like so:</p>
+<table width="80%" border="0" cellspacing="5" cellpadding="5" align="center">
+  <tr> 
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Judy Smith</font></td>
+    <td><a href="#"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">remove</font></a></td>
+  </tr>
+  <tr> 
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Mark Brown</font></td>
+    <td><a href="#"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">remove</font></a></td>
+  </tr>
+  <tr> 
+    <td> 
+      <form name="form1" method="post" action="">
+        <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+        <input type="submit" name="Add" value="Add Buddy...">
+        </font> 
+      </form>
+    </td>
+    <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2"></font></td>
+  </tr>
+</table>
+<p><br>
+  To remove a buddy, click the &quot;remove&quot; link beside the relevant name. 
+  To add a buddy, press the Add Buddy button. The user is presented with a search 
+  dialog into which they can enter names and press Search. E.g.,</p>
+<table width="80%" border="0" cellspacing="5" cellpadding="5" align="center">
+  <tr> 
+    <td> 
+      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Enter all 
+        or part of the name of a person that you want to add to your buddies. 
+        A list of matches will be presented, from which you can select one or 
+        more buddies.<br>
+        </font> </p>
+      <form name="form1" >
+        <font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        <input type="text" name="textfield" value="Bill Miller">
+        <input type="submit" name="Submit" value="Find ">
+        </font> 
+      </form>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+</table>
+<p>The result list appears with check boxes beside each name. To add a new buddy, 
+  check the box beside a name and press the Add button.</p>
+<table width="80%" border="0" cellspacing="5" cellpadding="5" align="center">
+  <tr> 
+    <td> 
+      <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Enter all 
+        or part of the name of a person that you want to add to your buddies. 
+        A list of matches will be presented, from which you can select one or 
+        more buddies.<br>
+        </font> </p>
+      <form name="form1" >
+        <font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+        <input type="text" name="textfield3" value="Bill Miller">
+        <input type="submit" name="Submit4" value="Find ">
+        </font> 
+      </form>
+      <p>&nbsp;</p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Below are 
+        the people who match your query. Select the people you want to add to 
+        your buddies and press Add To Buddies</font></p>
+      <form name="form2" >
+        <p> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+          <input type="checkbox" name="checkbox2" value="checkbox" checked>
+          Bill Miller. Middle school math teacher. Iowa</font><br>
+          <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> </font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
+          <input type="checkbox" name="checkbox3" value="checkbox">
+          William Miller. High school english teacher. California.</font></p>
+        <p> <font size="2"> 
+          <input type="submit" name="Submit3" value="Add To Buddies">
+          </font></p>
+      </form>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><b>Status Area [1]</b></p>
+<p>Below the tabs and input fields is a strip of gray that shows announcements 
+  (like, You have 4 saved messages) and the current number of users in the environment. 
+  This may be part of the chat applet, or part of the HTML frame. For faster update, 
+  we may want to make it part of the chat applet.</p>
+<p><font face="Times"><b>Whiteboard [3] </b></font></p>
+<p><font face="Times">The whiteboard won't be designed and implemented under our 
+  first release. Use of the whiteboard will likely require a separately downloaded 
+  and installed client application, in order to support desired features. It need 
+  not run in the browser.There is a limit of one whiteboard per room. </font></p>
+<p><font face="Times">Features on this whiteboard should include the ability to 
+  import images and draw lines, circles, arrows and write text on top of images. 
+  We are also talking with <a href="http://www.tutorsedge.com/main/vclass.html">TutorsEdge</a> 
+  about their vClass Virtual Classroom tool (click on the Demo tab from the TutorsEdge 
+  page). vClass includes a shared whiteboard for graphics, powerpoint slides, 
+  urls, etc. as well as audio chat, full recording of sessions, additional tools 
+  like a graphing calculator, etc.</font> We may use their tool for the shared 
+  whiteboard and audio. It is 100% Java and requires WebStart (a special install), 
+  which is fine with us for advanced functionality. Minimal technical integration 
+  may be needed to tell their server what people are in what room in TI2, which 
+  could then determine room groupings in vClass. Alternately, we may be able to 
+  adapt <font face="Times"> the <a href="http://chemsense.org/manual/#studio">ChemSense 
+  drawing tool</a>, but TutorsEdge will give us a lot more, including the audio, 
+  polling, sharing, recording, etc. for free.</font></p>
+<h2><b>Asynchronous Communication</b></h2>
+<p><b>Saved Messages [1]</b></p>
+<p>Saved Messages appear under the users Me tab. The entire contents of the saved 
+  message is displayed, and can be deleted by the recipient whenever desired.</p>
+<p>Users are notified of Saved Messages in several ways, including red text in 
+  the status area at the bottom right that says <font face="Times" color="#ff0000">You 
+  have X new messages, <font color="#000000">as well as a flag icon on the Me 
+  tab like this:</font></font></p>
+<p><img src="meclosedalert.gif" width="57" height="33"></p>
+<p><font face="Times" color="#ff0000"><font color="#000000">that appears when 
+  the user has unread saved messages. Saved messages notifications that appear 
+  in HTML will refresh whenever the user goes to a new page or logs in. If the 
+  user is in Unavailable mode, notification should appear immediately (in real 
+  time, no manual pull needed) in the gray area of the applet (where the output 
+  field is in available mode), just below the field in which the user can edit 
+  their unavailable message.</font></font></p>
+<p><font face="Times" color="#000000">If a user has an office, a message will also appear on their welcome page, that only they can see, that tells them that they have X new messages and links to their Me page with their saved messages.</font></p>
+<p><font face="Times"><b>Discussion Board [1]</b></font></p>
+<p><font face="Times">One discussion board will be available in each individual, 
+  group, and course room in tappedin. Features of discussion boards include:</font></p>
+<ul>
+  <li><font face="Times">View message and poster, and reply to posts <b>[1]</b></font></li>
+  <li><font face="Times">O</font><font face="Times">ption to view the discussion 
+    as threaded or unthreaded <b>[2]</b></font></li>
+  <li><font face="Times">Mark posts as favorites and connect to via Me Tab <b>[3]</b></font></li>
+  <li><font face="Times">Mark users as favorites and be notified when they post 
+    something new.<b>[3</b>] </font></li>
+  <li><font face="Times">Email options are availble <b> [2] </b>so that the user 
+    can choose to receive individual postings<b> [2]</b> or a digest form of postings<b> 
+    [3]</b> via email</font></li>
+</ul>
+<p><b> Mailing Lists [1]</b></p>
+<p><font face="Times">There will be an A</font>SO mailing list<b> [1] </b>to email 
+  members who have indicated they want to receive these ASO announcements (check 
+  box is checked by default). Members must opt out to not receiving mailings) 
+  based on the types of subject areas and grade levels that they have indicated 
+  that they are interested in knowing about.</p>
+<p>In Me settings, users indicate other announcement they wish to see in TI and 
+  which ones they want to be emailed [2]</p>
+<p><b>Announcements [2]</b></p>
+<p>Ability to post announcements associated with a course or a group (see Settings 
+  and Welcome in Courses and Groups for details), or with the larger TI community. 
+  <b>[2]</b> </p>
+<p>TI wide announcement can be sent by the staff to appear in all rooms below 
+  Chat where the Saved Private Messages are announced [2]. Announcements remain 
+  until another announcement covers them up, or X minutes (10?) passes.</p>
+<p><b>Polls [3]</b></p>
+<p>Group and course owners can create polls for their participants. The poll will 
+  let the user enter a question, and specify a set of responses to choose from. 
+  The poll will appear on a page in the room and users can click radio buttons 
+  to respond. Email may be used to notify users of polls.</p>
+<p>&nbsp;</p>
+</body>
+</html>
